@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Notable&family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&family=Oswald:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+.container {
+  .first-section {
+    height: 100%;
+    width: 100%;
+    background: #313131;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    display: none;
+    .right {
+      align-self: end;
+      height: 100vh;
+      width: 100%;
+      color: white;
+      background: #cd281b;
+      position: relative;
+      display: grid;
+      place-items: center;
+      .details {
+        padding: 30px;
+        h2 {
+          font-family: "Nanum Myeongjo", serif;
+          font-size: 45px;
+        }
+        h1 {
+          font-family: "Oswald", sans-serif;
+          font-size: 75px;
+        }
+        p {
+          margin-top: 20px;
+          font-size: 17px;
+        }
+      }
+      img {
+        height: 540px;
+        transform: scale(-1, 1);
+        position: absolute;
+        align-self: end;
+        left: -440px;
+      }
+      .pick-color {
+        height: 200px;
+        width: 190px;
+        background: white;
+        justify-self: end;
+        position: relative;
+        right: 7em;
+        z-index: 11111;
+
+        display: grid;
+        place-items: center;
+        grid-template-columns: auto auto auto;
+        grid-row-gap: 5px;
+
+        .color {
+          height: 30px;
+          width: 30px;
+
+          box-shadow: 0px 0px 4px black;
+        }
+        .red {
+          background: #cd281b;
+        }
+        .yellow {
+          background: #fca311;
+        }
+        .orange {
+          background: #fb5607;
+        }
+        .white {
+          background: #fff1e6;
+        }
+        .black {
+          background: black;
+        }
+        .blue {
+          background: #5e60ce;
+        }
+      }
+    }
+
+    .left {
+      height: 100vh;
+      background-image: url("https://imagescdn.dealercarsearch.com/Media/17848/9962952/637154781539958466.jpg");
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      position: relative;
+      .bg-dark {
+        position: relative;
+        display: grid;
+        background: rgba(0, 0, 0, 0.7);
+        height: 100vh;
+        width: 100%;
+
+        .navbar {
+          display: grid;
+          grid-template-columns: 3fr 1fr 1fr 1fr;
+          height: 60px;
+          background: white;
+          width: 100%;
+          position: absolute;
+          text-align: center;
+          box-shadow: 0px 6px 100px black;
+          place-items: center;
+          li:nth-child(1) {
+            align-self: center;
+            justify-self: start;
+          }
+          li {
+            font-size: 17px;
+            margin-left: 25px;
+            margin-right: 25px;
+            display: inline;
+            font-family: "Roboto Slab", serif;
+            display: grid;
+            cursor: pointer;
+            img {
+              background: transparent;
+              height: 23px;
+            }
+          }
+          li:after {
+            content: "";
+            border: 0px solid red;
+            cursor: pointer;
+            padding-left: 0px;
+            padding-right: 0px;
+            transition: all 280ms ease;
+          }
+          li:hover:after {
+            border: 1px solid red;
+            padding-left: 40px;
+            padding-right: 40px;
+          }
+        }
+
+        h1 {
+          font-family: "Bebas Neue", cursive;
+          color: rgba(255, 255, 255, 0.7);
+          align-self: center;
+          justify-self: center;
+          font-size: 120px;
+        }
+      }
+    }
+  }
+  .second-section {
+    height: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    background: #313131;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    position: absolute;
+    z-index: 99999;
+
+    .left {
+      background: #313131;
+      height: 100%;
+      width: 100%;
+      display: grid;
+      color: white;
+      font-family: "Oswald", sans-serif;
+      place-items: center;
+
+      .center {
+        
+        height: 50%;
+        display: grid;
+      }
+      .features {
+        display: grid;
+        align-self: center;
+        justify-self: center;
+        .feature {
+          display: grid;
+          grid-template-columns: 50% 50%;
+          grid-column-gap: 70px;
+          text-align:left;
+          h2 {
+            font-size: 23px;
+          }
+          span {
+            font-size: 23px;
+            font-weight: 200;
+          }
+        }
+      }
+
+      h1 {
+        align-self: center;
+        justify-self: center;
+        font-size: 100px;
+      }
+    }
+    .right {
+      width: 100%;
+      height: 100%;
+      background: white;
+      display: grid;
+      .price {
+        background: #313131;
+        place-self: end;
+        height: 90px;
+        width: 220px;
+        display: grid;
+        place-items: center;
+        color: white;
+        font-family: "Oswald", sans-serif;
+        position: relative;
+        top: 30px;
+        span {
+          font-size: 40px;
+        }
+      }
+      img {
+        height: 540px;
+        transform: scale(-1, 1);
+        align-self: center;
+        justify-self: center;
+      }
+    }
+  }
+}

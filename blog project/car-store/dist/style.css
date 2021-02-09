@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Notable&family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&family=Oswald:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.container .first-section {
+  height: 100%;
+  width: 100%;
+  background: #313131;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  display: none;
+}
+.container .first-section .right {
+  align-self: end;
+  height: 100vh;
+  width: 100%;
+  color: white;
+  background: #cd281b;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+.container .first-section .right .details {
+  padding: 30px;
+}
+.container .first-section .right .details h2 {
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 45px;
+}
+.container .first-section .right .details h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 75px;
+}
+.container .first-section .right .details p {
+  margin-top: 20px;
+  font-size: 17px;
+}
+.container .first-section .right img {
+  height: 540px;
+  transform: scale(-1, 1);
+  position: absolute;
+  align-self: end;
+  left: -440px;
+}
+.container .first-section .right .pick-color {
+  height: 200px;
+  width: 190px;
+  background: white;
+  justify-self: end;
+  position: relative;
+  right: 7em;
+  z-index: 11111;
+  display: grid;
+  place-items: center;
+  grid-template-columns: auto auto auto;
+  grid-row-gap: 5px;
+}
+.container .first-section .right .pick-color .color {
+  height: 30px;
+  width: 30px;
+  box-shadow: 0px 0px 4px black;
+}
+.container .first-section .right .pick-color .red {
+  background: #cd281b;
+}
+.container .first-section .right .pick-color .yellow {
+  background: #fca311;
+}
+.container .first-section .right .pick-color .orange {
+  background: #fb5607;
+}
+.container .first-section .right .pick-color .white {
+  background: #fff1e6;
+}
+.container .first-section .right .pick-color .black {
+  background: black;
+}
+.container .first-section .right .pick-color .blue {
+  background: #5e60ce;
+}
+.container .first-section .left {
+  height: 100vh;
+  background-image: url("https://imagescdn.dealercarsearch.com/Media/17848/9962952/637154781539958466.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  position: relative;
+}
+.container .first-section .left .bg-dark {
+  position: relative;
+  display: grid;
+  background: rgba(0, 0, 0, 0.7);
+  height: 100vh;
+  width: 100%;
+}
+.container .first-section .left .bg-dark .navbar {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr;
+  height: 60px;
+  background: white;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  box-shadow: 0px 6px 100px black;
+  place-items: center;
+}
+.container .first-section .left .bg-dark .navbar li:nth-child(1) {
+  align-self: center;
+  justify-self: start;
+}
+.container .first-section .left .bg-dark .navbar li {
+  font-size: 17px;
+  margin-left: 25px;
+  margin-right: 25px;
+  display: inline;
+  font-family: "Roboto Slab", serif;
+  display: grid;
+  cursor: pointer;
+}
+.container .first-section .left .bg-dark .navbar li img {
+  background: transparent;
+  height: 23px;
+}
+.container .first-section .left .bg-dark .navbar li:after {
+  content: "";
+  border: 0px solid red;
+  cursor: pointer;
+  padding-left: 0px;
+  padding-right: 0px;
+  transition: all 280ms ease;
+}
+.container .first-section .left .bg-dark .navbar li:hover:after {
+  border: 1px solid red;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.container .first-section .left .bg-dark h1 {
+  font-family: "Bebas Neue", cursive;
+  color: rgba(255, 255, 255, 0.7);
+  align-self: center;
+  justify-self: center;
+  font-size: 120px;
+}
+.container .second-section {
+  height: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  background: #313131;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  position: absolute;
+  z-index: 99999;
+}
+.container .second-section .left {
+  background: #313131;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  place-items: center;
+}
+.container .second-section .left .center {
+  height: 50%;
+  display: grid;
+}
+.container .second-section .left .features {
+  display: grid;
+  align-self: center;
+  justify-self: center;
+}
+.container .second-section .left .features .feature {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 70px;
+  text-align: left;
+}
+.container .second-section .left .features .feature h2 {
+  font-size: 23px;
+}
+.container .second-section .left .features .feature span {
+  font-size: 23px;
+  font-weight: 200;
+}
+.container .second-section .left h1 {
+  align-self: center;
+  justify-self: center;
+  font-size: 100px;
+}
+.container .second-section .right {
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: grid;
+}
+.container .second-section .right .price {
+  background: #313131;
+  place-self: end;
+  height: 90px;
+  width: 220px;
+  display: grid;
+  place-items: center;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  position: relative;
+  top: 30px;
+}
+.container .second-section .right .price span {
+  font-size: 40px;
+}
+.container .second-section .right img {
+  height: 540px;
+  transform: scale(-1, 1);
+  align-self: center;
+  justify-self: center;
+}

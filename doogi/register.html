@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style\\register.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script type="text/javascript" src="js\\functions.js">
+
+    </script>
+    <title>Register</title>
+  </head>
+  <body>
+
+    <div class="container text-center">
+      <h3 class="text-center" style="margin-top:5px;">Create Account</h3>
+      <div class="row text-center circles">
+        <div class="col">
+          <i class="fas fa-circle circle-" id="selected"></i>
+          <i class="far fa-circle circle-"></i>
+          <i class="far fa-circle circle-"></i>
+        </div>
+
+      </div>
+
+        <form action="confirm-account" method="post" class="form-name">
+          <div class="col first-section">
+            <div class="form-group">
+              <label for="username-label">Username</label>
+              <input type="text" required class="form-control" id="username-label" name="uname" aria-describedby="usernameHelp" placeholder="Enter username">
+            </div>
+            <div class="form-group">
+              <label for="email-label">Email address</label>
+              <input type="email" required class="form-control" id="email-label" name="uemail" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="passwd-lbl" >Password</label>
+              <input type="password" required class="form-control" id="passwd-lbl" placeholder="Password" name="password">
+            </div>
+            <div class="form-group">
+              <label for="conf-passwd-lbl" >Confirm Password</label>
+              <input type="password" required class="form-control" id="conf-passwd-lbl" placeholder="Re-enter Password">
+            </div>
+
+            <div class="row">
+              <div class="col text-left">
+
+              </div>
+              <div class="col text-right">
+                <button type="button" class="btn btn-outline-secondary btn-sm Next-btn" id="go-sec-2">Next</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col second-section">
+            <div class="form-group">
+              <label for="location-label">Location</label>
+              <select class="form-control" name="location" id="location-label" required>
+                <option value="suli">Sulaymaniyah</option>
+                <option value="erbil">Erbil</option>
+                <option value="kirkuk">Kirkuk</option>
+                <option value="mosul">Mosul</option>
+                <option value="baghdad">Baghdad</option>
+                <option value="Duhok">Duhok</option>
+                <option value="halabja">Halabja</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="pn-label">Phone Number</label>
+              <input type="text" name="telphone" class="form-control" placeholder="888 888 8888" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" maxlength="12"  title="Ten digits code" required/>
+            </div>
+            <div class="form-group">
+              <label for="prof-lbl">Profession</label>
+              <input type="text" class="form-control" id="prof-lbl" placeholder="Select Professions" required>
+            </div>
+            <div class="form-group">
+              <label for="tags-lbl">Tags</label>
+              <input type="text" class="form-control" id="tags-lbl" placeholder="Enter Tags" required>
+            </div>
+            <div class="row">
+              <div class="col text-left">
+                <button type="button" class="btn btn-outline-secondary btn-sm back-btn" id="go-sec-1">Back</button>
+              </div>
+              <div class="col text-right">
+                <button type="button" class="btn btn-outline-secondary btn-sm Next-btn" id="go-sec-3">Next</button>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col third-section">
+            <div class="col" id="propic-section" style="display:none;">
+              <img src="" id="uploaded-pic" height="150px" width="150px">
+            </div>
+            <div class="form-group">
+              <label for="proPic-label">Upload Your Profile Picture</label>
+              <input type="file"  required class="form-control" id="proPic-label" name="proPic" >
+            </div>
+            <div class="form-group">
+              <label for="gender-label">Gender</label>
+              <select class="form-control" name="gender" id="gender-label" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+
+            <div class="row">
+              <div class="col text-left">
+                <button type="button" class="btn btn-outline-secondary btn-sm back-btn" id="back-sec-2">Back</button>
+              </div>
+              <div class="col text-right">
+                <button type="submit" class="btn btn-outline-secondary btn-sm back-btn" id="subBtn">Submit</button>
+              </div>
+            </div>
+          </div>
+        </form>
+    </div>
+
+    <script type="text/javascript">
+    $("#proPic-label").change(function() {
+      change_pic(this);
+    });
+
+    $(window).click( function(e){
+      var tgt = e.target;
+      registery_tabs(tgt.id);
+
+    });
+    </script>
+
+  </body>
+</html>

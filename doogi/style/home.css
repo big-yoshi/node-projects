@@ -1,0 +1,430 @@
+html,body{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  height: 285%;
+  scroll-behavior: smooth;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: Lato !important;
+  /*font-family: 'Roboto', sans-serif !important;*/
+}
+
+.home-top{
+  vertical-align: baseline;
+  position: relative;
+  width: 100%;
+  height: 12.5%;
+  background-image: url('pics/1876.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0px !important;
+}
+
+.align-top{
+  position: relative;
+  top: -60px;
+}
+
+.navbar a{
+  color: #fff;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.navbar a:hover{
+  color: #fff;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.navbar .brandname{
+  font-size: 27px !important;
+}
+
+.search-cntr{
+  color:#fff;
+  position: relative;
+  top:65px;
+  max-width: 45% !important;
+  left: -27%;
+}
+.search-cntr input[type='text']{
+  /*! border-radius: 30px; */
+  border-color: #fff;
+  padding-left: 23px;
+  border-radius: 0 !important;
+}
+.search-cntr button{
+
+  background-color: #8A2BE2;
+  color: #fff;
+  border-radius: 0;
+
+  border-color: #8A2BE2;
+}
+.search-cntr button:hover{
+  color:#fff;
+}
+
+.about-us{
+  position: relative;
+  top: -32px;
+  width: 100%;
+  height: 7%;
+  background-color: #8A2BE2 !important;
+  margin-bottom: 0px !important;
+
+}
+.about-us h5,h2{
+  margin-left: 20px !important;
+  color: #fff !important;
+  margin-top: 20px;
+}
+.payment-sec{
+  color: #101010 !important;
+  position: relative;
+  top: -32px;
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  margin-bottom: 15px !important;
+
+
+}
+.payment-sec img{
+  min-width: 350px;
+  min-height: 100%;
+
+}
+.payment-sec h2{
+  color: #101010;
+  margin-left: 20px;
+  background-image: none !important;
+  margin-bottom: 100px;
+}
+.payment-sec .right-side{
+  color:#101010;
+  background-image: none !important;
+  margin-left: 20px;
+  margin-top: 70px;
+}
+.payment-sec .right-side .checkboxes{
+  font-size: 25px;
+  color: #8A2BE2;
+  background-image: none !important;
+}
+
+.payment-sec .right-side .collection{
+  margin-bottom: 20px;
+  background-image: none !important;
+}
+
+.payment-sec .right-side .collection .col-sm-7{
+  position: relative;
+  top: -10px;
+  background-image: none !important;
+
+}
+
+
+
+
+.services .sections{
+
+  margin-left: 70px;
+  margin-bottom: 20px;
+}
+
+.services{
+  margin-top: 10px;
+  margin-bottom: 0px !important;
+  width: 100%;
+  height: 11%;
+  background-color: #fff !important;
+}
+
+
+.services .sections .icons{
+  font-size: 45px;
+  margin-bottom: 8px;
+  color: #8A2BE2;
+}
+
+.services .sections .paragraph{
+  color: #101010;
+}
+
+
+/*
+.business{
+  width: 100%;
+}
+
+.business .right{
+  background-image: url('pics\\2796426.jpg');
+  background-position:  right;
+  background-size: cover;
+  height: 300px;
+}
+.business .left{
+  margin-left: 11px;
+}
+*/
+
+.create-account{
+  margin-top: 50px;
+  height: 11.8%;
+  width: 100%;
+  top: -50px;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-image: url('pics\\cmptr.jfif');
+  background-attachment: fixed;
+}
+
+.create-account .background_clr{
+  background-image: linear-gradient(90deg,#873BDD,purple) !important;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  opacity: 0.55;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.create-account .text-over-background{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: transparent;
+  right: 0;
+  z-index: 99999;
+  top: 0;
+}
+
+.create-account .text-over-background .left{
+  margin-left: 10px;
+}
+
+.create-account .text-over-background .left h1{
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+}
+
+.create-account .text-over-background .right{
+
+}
+
+.create-account .text-over-background .right h1{
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+}
+
+.create-account .text-over-background .row{
+  position: relative;
+  top: 20%;
+  right: 0;
+}
+
+.create-account .text-over-background .row a{
+  color: #101010 !important;
+  border-color: #fff;
+  background-color: #fff !important;
+}
+
+.create-account .text-over-background .row a:hover{
+  color: white !important;
+  background-color: #520D91 !important;
+  border-color: #520D91;
+}
+
+
+.service-type{
+  height: 4%;
+  width: 100%;
+  top: -83px;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  background-color: #e9ecef;
+  margin-bottom: 0px;
+}
+
+.service-type .service-categories{
+  position: relative;
+  right: auto;
+}
+
+.service-type .service-categories .icons{
+  font-size: 42px;
+  color: #8A2BE2;
+  margin-bottom: 20px;
+
+}
+
+.service-type .service-categories p{
+  color: #101010;
+}
+
+.promotion-section{
+
+  top: -90px;
+  position: relative;
+  width: 100%;
+  height: 12%;
+  background-color: #fff !important;
+}
+
+.promotion-section .title h2{
+  position: relative;
+  top: -10px;
+  color: #101010 !important;
+  text-align: center;
+  margin: 0 !important;
+}
+
+.promotion-section .row{
+  margin-top: 20px;
+}
+
+.promotion-section .row .freelancers{
+  /*! margin:15px; */
+  background-color: #fff;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  max-width:331px !important;
+  min-height: 370px;
+  border-radius: 5px !important;;
+  font-family: Bahnschrift;
+
+}
+
+.promotion-section .row .freelancers .Tnail{
+  height: 300px;
+  width: 326px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.promotion-section .row .freelancers .service-title{
+  font-size: 21px;
+  text-align: center;
+  margin-top: 5px;
+}
+.promotion-section .row .freelancers .service-info{
+  width: 100%;
+  height: 120px;
+}
+
+.promotion-section .row .freelancers .service-info .user-profile{
+  margin-left: 10px;
+
+}
+
+.promotion-section .row .freelancers .service-info .user-profile .profile-pic{
+  border-radius: 50px;
+  border:1px solid #101010;
+  max-height: 30px;
+  max-width: 30px;
+
+}
+.promotion-section .row .freelancers .service-info .user-profile .user-name{
+  font-size: 13px;
+  position: relative;
+  top: 3px;
+
+}
+
+.promotion-section .row .freelancers .service-info .service-bottom{
+  height: 110px;
+}
+
+.promotion-section .row .freelancers .service-info .service-bottom .tags span{
+  margin-left: 5px;
+}
+
+.promotion-section .row .freelancers .service-info .service-bottom .col{
+  font-size: 14px;
+  color:#6a6a6a;
+}
+
+
+
+.promotion-section .row .freelancers .service-info .service-bottom .inpts .col{
+  color: #101010 !important;
+}
+
+
+.promotion-section .row .freelancers .service-info .service-bottom .inpts .col i{
+  color:#8A2BE2;
+}
+
+
+.carousel-control-next, .carousel-control-prev{
+  font-size: 35px !important;
+  color: #101010 !important;
+}
+
+
+.help-section{
+  background-color: #8A2BE2 !important;
+  width: 100%;
+  height: 600px;
+}
+
+.help-section .title h2{
+  position: relative;
+  top: -10px;
+  color: #fff !important;
+  text-align: center;
+  margin: 0 !important;
+}
+
+
+.nav-section {
+  position: relative;
+  top: -32px;
+  background-color: #111111 !important;
+  height: 600px;
+  width: 100%;
+}
+
+.nav-section .row-contents{
+  color: #fff;
+}
+
+.nav-section .row-contents .right-side{
+  margin-right: 20px;
+}
+.nav-section .row-contents h1{
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.nav-section .row-contents .conts{
+  font-size: 22px;
+}
+
+.btom .col h1{
+  position: relative;
+  bottom: 30px;
+
+}
+.btom .col h1{
+  font-size: 20px;
+}
+.btom{
+  max-height: 5px;
+}

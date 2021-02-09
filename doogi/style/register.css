@@ -1,0 +1,65 @@
+body{
+  background: url(pics\\111.jpeg);
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+.container{
+  padding-top:10px;
+  height: 500px;
+  width: 400px !important;
+  position: relative;
+  top: 60px;
+
+  background-color: #FFF;
+}
+.first-section{
+
+}
+.second-section{
+  display: none;
+}
+
+.third-section{
+  display: none;
+}
+form{
+  position: relative;
+  top: 30px;
+
+}
+
+.circles{
+  font-size: 12.4px;
+}
+
+.circles {
+  color:#8A2BE2;
+}
+
+ input[type='password'], input[type='file'],input[type='email'],input[type='text'],select{
+  width: 300px !important;
+  margin:0 auto !important;
+}
+input[type='email']:focus, input[type='password']:focus,input[type='text']:focus,select:focus{
+ border-color: #8A2BE2 !important;
+  box-shadow: 0 0 8px #8A2BE2 !important;
+  outline: 0 none !important;
+}
+.btn{
+  width: 60px !important;
+  position: relative;
+  top: 10px;
+}
+
+.btn:hover{
+  background-color: #8a2be2 !important;
+}
+#uploaded-pic{
+  border-radius: 100px;
+}

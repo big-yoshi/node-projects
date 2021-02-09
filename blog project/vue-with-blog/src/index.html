@@ -1,0 +1,14 @@
+<div class="container">
+  
+  <h1 class="title">My Blog</h1>
+  <div class='cell' is="cell-item"
+      v-for="(cell, index) in cells"
+      v-bind:key="cell.id"
+      v-bind:title="cell.title"
+      v-on:remove="if(cells.length !=1){cells.splice(index, 1)}"
+      v-on:add="cells.splice(index+1,0,{id:index+1,title:''}); console.log(index)">
+  </div>
+  
+  
+</div>
+

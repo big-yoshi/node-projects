@@ -1,0 +1,53 @@
+.container-fluid{
+  border: 1px solid #101010;
+  background-color: #fff !important;
+  height: 500px !important;
+  width: 70% !important;;
+  background-color: black;
+  margin:0 auto !important;
+  position: relative;
+  top: 70px;
+}
+
+.pro-pic{
+  background-image: url(web-design\\girl1.jpg);
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+}
+.pro-desc{
+  min-width: 400px;
+
+}
+.pro-desc h1{
+  position: relative;
+  left: 10px;
+  top: 80px;
+}
+.pro-desc .job-tags{
+  position: relative;
+  top: 150px;
+  display:  initial;
+  font-size: 19px;
+
+}
+.rating-stars{
+  position: relative;
+  left: 10px;
+  top: 60px;
+}
+
+.action-buttons{
+  position: relative;
+  top: 210px;
+  text-align: center;
+}
+
+.action-buttons button{
+  color: #fff;
+  background-color: #8a2bec;
+  border: 3px solid #8a2bec;
+  border-radius: 0;
+  margin:10px;
+  width: 100px;
+}
